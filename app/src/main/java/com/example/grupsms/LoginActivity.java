@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
             mAuth.signInWithEmailAndPassword(eposta, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
                     Toast.makeText(this, "Giriş Başarılı", Toast.LENGTH_SHORT).show();
-                    //startActivity(new Intent(this, MainActivity.class));
+                    startActivity(new Intent(this, MainActivity.class));
                     finish();
                 }else{
                     Toast.makeText(this, "Giriş Başarısız", Toast.LENGTH_SHORT).show();

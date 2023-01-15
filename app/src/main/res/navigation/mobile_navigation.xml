@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/create_group">
+
+    <fragment
+        android:id="@+id/create_group"
+        android:name="com.example.grupsms.ui.create_group.CreateGroupFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_create_group" />
+
+    <fragment
+        android:id="@+id/add_member_to_group"
+        android:name="com.example.grupsms.ui.add_member_to_group.AddMemberToGroupFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_add_member_to_group" />
+
+    <fragment
+        android:id="@+id/crate_message"
+        android:name="com.example.grupsms.ui.crate_message.CreateMessageFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_create_message" />
+
+    <fragment
+        android:id="@+id/send_message"
+        android:name="com.example.grupsms.ui.send_message.SendMessageFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_send_message" />
+
+    <fragment
+        android:id="@+id/logout"
+        android:name="com.example.grupsms.ui.logout.LogoutFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_logout" />
+</navigation>
